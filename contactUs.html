@@ -3,29 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | AK Team</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="website icon" type="jpg" href="images/myIcon.jpg">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
         }
-        
         /* Navbar */
         .navbar {
-            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            background: linear-gradient(45deg, #be52df, #1d4a98);
         }
         .navbar-brand {
             font-weight: bold;
-            color: #fff;
+            font-size: 24px;
+            color: white !important;
+            transition: color ease-in-out;
         }
-        .navbar-nav .nav-link {
-            color: white;
-            font-weight: 500;
+        .navbar-brand:hover{
+            color: #000000 !important;
+        }
+        .nav-link {
+            color: white !important;
             transition: 0.3s;
         }
-        .navbar-nav .nav-link:hover {
-            color: #ffd700;
+        .nav-link:hover {
+            color: #fce408 !important;
+            font-size: 18px;
         }
 
         /* Contact Form */
@@ -72,7 +77,7 @@
 
         /* Footer */
         .footer {
-            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            background: linear-gradient(45deg, #be52df, #1d4a98);
             color: white;
             text-align: center;
             padding: 20px ;
@@ -86,6 +91,24 @@
         .footer a:hover {
             color: #ffeb3b;
         }
+
+        .fab{
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .fab:hover{
+            color: #000000 !important;
+            font-size: 30px;
+        }
+        .fas{
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .fas:hover{
+            color: #000000 !important;
+            font-size: 30px;
+        }
+
     </style>
 </head>
 <body>
@@ -93,7 +116,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
     <div class="container">
-        <a class="navbar-brand" href="#">Ujjaval Saini</a>
+        <a class="navbar-brand" href="#">CONTACT</a>
         <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -101,7 +124,6 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item"><a class="nav-link active" href="#">Contact</a></li>
             </ul>
         </div>
@@ -151,10 +173,16 @@
     <div class="container">
         <p>&copy; 2025 Ujjaval Saini | All Rights Reserved</p>
         <p>Follow me on:</p>
+        <a href="https://www.facebook.com/ujjaval.saini.96" target="_blank" class="text-white me-3">
+            <i class="fab fa-facebook fa-lg"></i>
+        </a>
+        <a href="https://www.instagram.com/ujvl.sa1n1/" target="_blank" class="text-white me-3">
+            <i class="fab fa-instagram fa-lg"></i>
+        </a>
         <a href="https://github.com/ujjaval01" target="_blank" class="text-white me-3">
             <i class="fab fa-github fa-lg"></i>
         </a>
-        <a href="https://www.linkedin.com/in/ujjaval-saini" target="_blank" class="text-white me-3">
+        <a href="https://www.linkedin.com/in/ujjavalsaini/" target="_blank" class="text-white me-3">
             <i class="fab fa-linkedin fa-lg"></i>
         </a>
         <a href="mailto:sainiujvl@gmail.com" class="text-white">
@@ -165,5 +193,43 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ <!-- EmailJS SDK -->
+ <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+ <script>
+     (function() {
+         emailjs.init("qpeyKouWPWLIZCK-Y"); // Replace with your EmailJS public key
+
+         document.getElementById('contactForm').addEventListener('submit', function(event) {
+             event.preventDefault();
+
+             let name = document.getElementById("name").value;
+             let email = document.getElementById("email").value;
+             let message = document.getElementById("message").value;
+             let statusMessage = document.getElementById("statusMessage");
+
+             if (!name || !email || !message) {
+                 statusMessage.innerHTML = "<span class='text-danger'>All fields are required.</span>";
+                 return;
+             }
+
+             let templateParams = {
+                 from_name: name,
+                 from_email: email,
+                 message: message
+             };
+
+             emailjs.send("service_9768aml", "template_obxho6t", templateParams)
+                 .then(function(response) {
+                     statusMessage.innerHTML = "<span class='text-success'>Message sent successfully!</span>";
+                     document.getElementById("contactForm").reset();
+                 }, function(error) {
+                     statusMessage.innerHTML = "<span class='text-danger'>Failed to send message. Try again later.</span>";
+                 });
+         });
+     })();
+ </script>
+
+
 </body>
 </html>
