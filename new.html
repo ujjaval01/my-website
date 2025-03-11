@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark & Light Mode Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Light Theme */
+        body.light {
+            background-color: white;
+            color: black;
+        }
+
+        /* Dark Theme */
+        body.dark {
+            background-color: #121212;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .theme-toggle {
+            cursor: pointer;
+            padding: 10px 20px;
+            border: none;
+            background-color: #f0c14b;
+            color: black;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 20px;
+        }
+
+        .theme-toggle:hover {
+            background-color: #ddb347;
+        }
+
+        .theme-toggle:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body class="light">
+
+    <div class="container">
+        <h1>Welcome to Dark & Light Mode</h1>
+        <button id="theme-toggle" class="theme-toggle">Dark Mode</button>
+    </div>
+
+    <script>
+        // Check the user's theme preference from localStorage
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        document.body.className = currentTheme;
+
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        themeToggleBtn.textContent = currentTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
+
+        themeToggleBtn.addEventListener('click', () => {
+            const newTheme = document.body.classList.contains('dark') ? 'light' : 'dark';
+            document.body.className = newTheme;
+            localStorage.setItem('theme', newTheme);
+            themeToggleBtn.textContent = newTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
+        });
+    </script>
+
+</body>
+</html>
