@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <link rel="website icon" type="jpg" href="images/myIcon.jpg">
     
     <!-- Custom CSS -->
@@ -96,6 +98,10 @@
             color: #000000 !important;
             font-size: 30px;
         }
+        .smooth-bounce {
+      animation-timing-function: ease-in-out; /* Makes the bounce smoother */
+      animation-duration: 2s; /* Slows down the animation for a smoother effect */
+  }
     </style>
 </head>
 <body>
@@ -103,7 +109,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">PROJECTS</a>
+            <!-- <a class="navbar-brand" href="#">PROJECTS</a> -->
+            <h2 class="navbar-brand animate__animated animate__bounce animate__infinite smooth-bounce">PROJECTS</h2>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
