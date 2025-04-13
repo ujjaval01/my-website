@@ -1,234 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="website icon" type="jpg" href="images/myIcon.jpg">
-    <style>
-        .smooth-bounce {
-        animation-timing-function: ease-in-out; /* Makes the bounce smoother */
-        animation-duration: 2s; /* Slows down the animation for a smoother effect */
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="website icon" type="jpg" href="images/myIcon.jpg"/>
+
+  <style>
+    .smooth-bounce {
+      animation-timing-function: ease-in-out;
+      animation-duration: 2s;
     }
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-        /* Navbar */
-        .navbar {
-            background: linear-gradient(45deg, #be52df, #1d4a98);
-        }
-        .navbar-brand {
-            font-weight: bold;
-            font-size: 24px;
-            color: white !important;
-            transition: color ease-in-out;
-        }
-        .navbar-brand:hover{
-            color: #000000 !important;
-        }
-        .nav-link {
-            color: white !important;
-            transition: 0.3s;
-        }
-        .nav-link:hover {
-            color: #fce408 !important;
-            font-size: 18px;
-        }
 
-        /* Contact Form */
-        .contact-form {
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-        }
-        .contact-form label {
-            font-weight: bold;
-        }
-        .contact-form button {
-            background: #6a5acd;
-            color: white;
-            border: none;
-        }
-        .contact-form button:hover {
-            background: #5a4ebf;
-        }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f7f7f7;
+    }
 
-        /* Contact Us Section */
-        .contact-section {
-            background: linear-gradient(135deg, #6a5acd, #836fff);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-            border-radius: 10px;
-        }
-        .contact-btn {
-            background: white;
-            color: #6a5acd;
-            font-weight: bold;
-            padding: 10px 20px;
-            border-radius: 25px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-            transition: 0.3s;
-        }
-        .contact-btn:hover {
-            background: #f0f0f0;
-        }
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(45deg, #be52df, #1d4a98);
+    }
 
-        /* Footer */
-        .footer {
-            background: linear-gradient(45deg, #be52df, #1d4a98);
-            color: white;
-            text-align: center;
-            padding: 20px ;
-            margin-top: 10px;
-        }
-        .footer a {
-            color: white;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-        .footer a:hover {
-            color: #ffeb3b;
-        }
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 24px;
+      color: white !important;
+      transition: color 0.3s ease-in-out;
+    }
 
-        .fab{
-            font-size: 18px;
-            transition: 0.3s;
-        }
-        .fab:hover{
-            color: #000000 !important;
-            font-size: 30px;
-        }
-        .fas{
-            font-size: 18px;
-            transition: 0.3s;
-        }
-        .fas:hover{
-            color: #000000 !important;
-            font-size: 30px;
-        }
+    .navbar-brand:hover {
+      color: #000000 !important;
+    }
 
-    </style>
+    .nav-link {
+      color: white !important;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #fce408 !important;
+      font-size: 18px;
+    }
+
+    /* Contact Us Section */
+    .contact-section {
+      background: linear-gradient(135deg, #6a5acd, #836fff);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .contact-btn {
+      background: white;
+      color: #6a5acd;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    .contact-btn:hover {
+      background: #f0f0f0;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form label {
+      font-weight: bold;
+    }
+
+    .contact-form button {
+      background: #6a5acd;
+      color: white;
+      border: none;
+    }
+
+    .contact-form button:hover {
+      background: #5a4ebf;
+    }
+
+    /* Footer */
+    .footer {
+      background: linear-gradient(45deg, #be52df, #1d4a98);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer a:hover {
+      color: #ffeb3b;
+    }
+
+    .fab, .fas {
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .fab:hover, .fas:hover {
+      color: #000000 !important;
+      font-size: 30px;
+    }
+  </style>
 </head>
 <body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
-    <div class="container">
-        <h2 class="navbar-brand animate__animated animate__bounce animate__infinite smooth-bounce">CONTACT</h2>
-        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link active" href="#">Contact</a></li>
-                <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-
-            </ul>
-        </div>
+  <div class="container">
+    <h2 class="navbar-brand animate__animated animate__bounce animate__infinite smooth-bounce">CONTACT</h2>
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      </ul>
     </div>
+  </div>
 </nav>
 
-<!-- Contact Us Section -->
+<!-- Contact Us Info -->
 <div class="container mt-5">
-    <div class="contact-section">
-        <h2>Contact Us</h2>
-        <p>If you have any feedback, questions, or business inquiries, please feel free to get in touch with us.</p>
-        <p><strong>Email:</strong> sainiujvl@gmail.com</p>
-        <a href="#" class="contact-btn">GO TO CONTACT US FORM</a>
-    </div>
+  <div class="contact-section">
+    <h2>Contact Us</h2>
+    <p>If you have any feedback, questions, or business inquiries, please feel free to get in touch with us.</p>
+    <p><strong>Email:</strong> sainiujvl@gmail.com</p>
+    <a href="#form" class="contact-btn">GO TO CONTACT US FORM</a>
+  </div>
 </div>
 
-<!-- Contact Form Section -->
+<!-- Contact Form -->
 <div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <form id="form">
-                <div class="field">
-                  <label for="from_name">Name</label>
-                  <input type="text" name="from_name" id="from_name">
-                </div>
-                <div class="field">
-                    <label for="to_name">Email</label>
-                    <input type="text" name="to_name" id="to_name">
-                  </div>
-                <div class="field">
-                  <label for="message">message</label>
-                  <input type="text" name="message" id="message">
-                </div>
-                <input type="submit" id="button" value="Send Email" >
-              </form>
-              
-              <script type="text/javascript"
-                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-              
-              <script type="text/javascript">
-                emailjs.init('qpeyKouWPWLIZCK-Y')
-              </script>
-        </div>
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <div class="contact-form">
+        <h3 class="text-center mb-4 text-primary">Send us a Message</h3>
+        <form id="form">
+          <div class="mb-3">
+            <label for="from_name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="from_name" name="from_name" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <label for="to_name" class="form-label">Email</label>
+            <input type="email" class="form-control" id="to_name" name="to_name" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <div class="text-center">
+            <input type="submit" id="button" value="Send Email" class="btn btn-primary px-4 py-2">
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
 </div>
-
-
 
 <!-- Footer -->
 <footer class="footer">
-    <div class="container">
-        <p>&copy; 2025 Ujjaval Saini | All Rights Reserved</p>
-        <p>Follow me on:</p>
-        <a href="https://www.facebook.com/ujjaval.saini.96" target="_blank" class="text-white me-3">
-            <i class="fab fa-facebook fa-lg"></i>
-        </a>
-        <a href="https://www.instagram.com/ujvl.sa1n1/" target="_blank" class="text-white me-3">
-            <i class="fab fa-instagram fa-lg"></i>
-        </a>
-        <a href="https://github.com/ujjaval01" target="_blank" class="text-white me-3">
-            <i class="fab fa-github fa-lg"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/ujjavalsaini/" target="_blank" class="text-white me-3">
-            <i class="fab fa-linkedin fa-lg"></i>
-        </a>
-        <a href="mailto:sainiujvl@gmail.com" class="text-white">
-            <i class="fas fa-envelope fa-lg"></i>
-        </a>
-    </div>
+  <div class="container">
+    <p>&copy; 2025 Ujjaval Saini | All Rights Reserved</p>
+    <p>Follow me on:</p>
+    <a href="https://www.facebook.com/ujjaval.saini.96" target="_blank"><i class="fab fa-facebook me-3"></i></a>
+    <a href="https://www.instagram.com/ujvl.sa1n1/" target="_blank"><i class="fab fa-instagram me-3"></i></a>
+    <a href="https://github.com/ujjaval01" target="_blank"><i class="fab fa-github me-3"></i></a>
+    <a href="https://www.linkedin.com/in/ujjavalsaini/" target="_blank"><i class="fab fa-linkedin me-3"></i></a>
+    <a href="mailto:sainiujvl@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
 </footer>
 
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ujjaval" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting, Now you can buy me a coffee🤩." data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-
+<!-- External Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  emailjs.init('YOUR_EMAILJS_USER_ID'); // Replace with your actual EmailJS user ID
 
- <script>
-const btn = document.getElementById('button');
+  const btn = document.getElementById('button');
+  document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    btn.value = 'Sending...';
+    const serviceID = 'default_service';
+    const templateID = 'template_obxho6t';
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        btn.value = 'Send Email';
+        alert('Message sent successfully!');
+      }, (err) => {
+        btn.value = 'Send Email';
+        alert('Failed to send: ' + JSON.stringify(err));
+      });
+  });
+</script>
 
-   btn.value = 'Sending...';
-
-   const serviceID = 'default_service';
-   const templateID = 'template_obxho6t';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-});
- </script>
-
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ujjaval" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting, Now you can buy me a coffee🤩." data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
 </body>
 </html>
