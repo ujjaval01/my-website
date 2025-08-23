@@ -210,28 +210,36 @@ body.dark-mode .cookie-consent {
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <h2 class="navbar-brand animate__animated animate__bounce animate__infinite smooth-bounce">SAINI</h2>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <button id="themeToggleBtn" class="btn btn-sm btn-light ms-3">
-    <i class="fas fa-moon"></i> Theme
-</button>
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand animate__animated animate__bounce animate__infinite smooth-bounce" href="#">
+      SAINI
+    </a>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- Toggler (Hamburger) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <!-- Theme Toggle Button inside Nav -->
+        <li class="nav-item ms-lg-3">
+          <button id="themeToggleBtn" class="btn btn-sm btn-light">
+            <i class="fas fa-moon"></i> Theme
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
