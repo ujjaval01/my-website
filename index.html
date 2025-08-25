@@ -227,7 +227,7 @@ body.dark-mode .cookie-consent {
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="project.html" id="projectsLink">Projects</a></li>
         <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <!-- Theme Toggle Button inside Nav -->
@@ -240,6 +240,28 @@ body.dark-mode .cookie-consent {
     </div>
   </div>
 </nav>
+
+<!-- Maintenance Modal -->
+<div class="modal fade" id="maintenanceModal" tabindex="-1" aria-labelledby="maintenanceModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title" id="maintenanceModalLabel">🚧 Projects Under Maintenance</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Some projects are currently under maintenance. Please check back later 🙏
+        <p id="countdownText" class="mt-3 text-danger fw-bold"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
@@ -419,8 +441,47 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const projectsLink = document.getElementById("projectsLink");
 
+  projectsLink.addEventListener("click", function (event) {
+    let lastShown = localStorage.getItem("projectsPopupTime");
+    let now = Date.now();
 
+    // Show only once in 24 hours
+    if (!lastShown || now - lastShown > 8640) {
+      event.preventDefault();
+
+      let modalElement = document.getElementById('maintenanceModal');
+      let myModal = new bootstrap.Modal(modalElement);
+      myModal.show();
+
+      // Save timestamp
+      localStorage.setItem("projectsPopupTime", now);
+
+      // Countdown timer (5 seconds)
+      let countdown = 10;
+      let countdownText = document.getElementById("countdownText");
+      countdownText.textContent = `Closing in ${countdown}s...`;
+
+      let timer = setInterval(function () {
+        countdown--;
+        if (countdown > 0) {
+          countdownText.textContent = `Closing in ${countdown}s...`;
+        } else {
+          clearInterval(timer);
+          myModal.hide();
+        }
+      }, 1000);
+
+      // Redirect after modal closes
+      modalElement.addEventListener("hidden.bs.modal", function () {
+        window.location.href = "project.html";
+      }, { once: true });
+    }
+  });
+});
+ 
     </script>
 </body>
 </html>
