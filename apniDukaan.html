@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apni Dukaan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+#carousel img {
+  opacity: 0.3;
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+#carousel img.active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+  </style>
+
+  <!-- Lottie Player -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body class="bg-gradient-to-br from-blue-600 via-indigo-700 to-purple-700 text-white font-sans">
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6">
+    <lottie-player 
+      src="https://assets9.lottiefiles.com/packages/lf20_jcikwtux.json"  
+      background="transparent" speed="1" style="width: 220px; height: 220px;" loop autoplay>
+    </lottie-player>
+    <h1 class="text-5xl md:text-6xl font-extrabold drop-shadow-lg">🛒 Apni Dukaan</h1>
+    <p class="mt-6 text-lg md:text-xl max-w-2xl">
+      Simple and smart stock & transaction management app for shop owners.  
+      Manage purchases, sales, and profit — all in one place.
+    </p>
+    <div class="mt-8 flex space-x-4">
+      <a href="#features" class="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:scale-105 transition">Explore Features</a>
+      <a href="#screenshots" class="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:scale-105 transition">Sample Screenshots</a>
+      <a href="#download" class="bg-white/20 px-6 py-3 rounded-lg font-semibold hover:scale-105 transition">Get App</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 bg-black/20 backdrop-blur-lg">
+    <h2 class="text-4xl font-bold text-center mb-12">🔥 Key Features</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto px-6">
+
+      <div class="bg-white/10 p-6 rounded-2xl shadow-xl hover:scale-105 transition text-center">
+        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_w51pcehl.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin: auto;" loop autoplay></lottie-player>
+        <h3 class="text-2xl font-semibold mb-4">📦 Stock Management</h3>
+        <p>Add, update, and track all your shop products in one place.</p>
+      </div>
+
+      <div class="bg-white/10 p-6 rounded-2xl shadow-xl hover:scale-105 transition text-center">
+        <lottie-player src="https://lottie.host/e9f34422-e657-40ba-9bc4-293d0d1e1d54/mptYP16SXG.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin: auto;" loop autoplay></lottie-player>
+        <h3 class="text-2xl font-semibold mb-4">💰 Transactions</h3>
+        <p>Record purchases & sales, track profit/loss, and filter history.</p>
+      </div>
+
+      <div class="bg-white/10 p-6 rounded-2xl shadow-xl hover:scale-105 transition text-center">
+        <lottie-player src="https://lottie.host/1228e14a-aecf-46c8-9f20-c68e796f79bb/lK3VGKVVOi.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin: auto;" loop autoplay></lottie-player>
+        <h3 class="text-2xl font-semibold mb-4">⚙️ Easy to Use</h3>
+        <p>Clean design and smooth interface made for shopkeepers.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section class="py-20 px-6">
+    <h2 class="text-4xl font-bold text-center mb-12">⚙️ How It Works</h2>
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_h4th9ofg.json" background="transparent" speed="1" style="width: 300px; height: 300px; margin: auto;" loop autoplay></lottie-player>
+      <ol class="space-y-6 text-lg">
+        <li>1️⃣ Download and install Apni Dukaan app.</li>
+        <li>2️⃣ Add products, rates, and stock details.</li>
+        <li>3️⃣ Record purchases and sales easily.</li>
+        <li>4️⃣ Track profit & grow your business 🚀.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 px-6 bg-white/10 backdrop-blur-md">
+    <h2 class="text-4xl font-bold text-center mb-12">💬 What Users Say</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <div class="bg-white/10 p-6 rounded-xl shadow-xl">
+        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_q7uarxsb.json" background="transparent" speed="1" style="width: 80px; height: 80px;" loop autoplay></lottie-player>
+        <p>"Apni Dukaan ne mera business simplify kar diya! Ab stock aur sales easily manage hoti hain."</p>
+        <h4 class="mt-4 font-bold">- Rajesh, Kirana Store Owner</h4>
+      </div>
+      <div class="bg-white/10 p-6 rounded-xl shadow-xl">
+        <lottie-player src="https://lottie.host/72ecce9e-a164-4c5a-b63b-5b3c926c0662/CAjjxgS3z8.json" background="transparent" speed="1" style="width: 80px; height: 80px;" loop autoplay></lottie-player>
+        <p>"Transactions aur profit tracking feature bohot useful hai. Highly recommend!"</p>
+        <h4 class="mt-4 font-bold">- Anjali, Boutique Owner</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="download" class="py-16 text-center bg-white/10 backdrop-blur-md">
+    <h2 class="text-4xl font-bold mb-4">🚀 Get Apni Dukaan Now!</h2>
+    <p class="mb-6">Download the app and start managing your dukaan smarter.</p>
+    <a href="#" class="bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold text-lg hover:scale-110 transition">Download APK</a>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-20 px-6">
+    <h2 class="text-4xl font-bold text-center mb-12">❓ Frequently Asked Questions</h2>
+    <div class="max-w-3xl mx-auto space-y-6 text-lg">
+      <div>
+        <h3 class="font-semibold">🔐 Kya mera data safe hai?</h3>
+        <p>Haan, sabhi records sirf aapke phone par store hote hain. Aapka data secure hai.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold">📱 Ye app kin devices par chalegi?</h3>
+        <p>Apni Dukaan sabhi Android phones (Android 6.0+) par smoothly chalti hai.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold">💸 Kya app free hai?</h3>
+        <p>Haan, app bilkul free hai. Aage premium features bhi add kiye jaa sakte hain.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots Section -->
+<section id="screenshots" class="py-20 bg-white/10 backdrop-blur-md text-center">
+  <h2 class="text-4xl font-bold mb-10">📸 App Screenshots</h2>
+  <p class="text-lg mb-12">See how Apni Dukaan looks and works in action.</p>
+
+  <!-- Carousel -->
+  <div class="max-w-4xl mx-auto overflow-hidden relative">
+    <div id="carousel" class="flex transition-transform duration-700">
+      <!-- Replace these with your app screenshots -->
+      <img src="/images/apniDukaan/splash.png" class="w-full md:w-1/3 p-2 rounded-2xl flex-shrink-0" alt="App Screenshot 1">
+      <img src="/images/apniDukaan/home.png" class="w-full md:w-1/3 p-2 rounded-2xl flex-shrink-0" alt="App Screenshot 2">
+      <img src="/images/apniDukaan/graph.png" class="w-full md:w-1/3 p-2 rounded-2xl flex-shrink-0" alt="App Screenshot 3">
+      <img src="/images/apniDukaan/setting.png" class="w-full md:w-1/3 p-2 rounded-2xl flex-shrink-0" alt="App Screenshot 4">
+      <img src="/images/apniDukaan/lang.png" class="w-full md:w-1/3 p-2 rounded-2xl flex-shrink-0" alt="App Screenshot 5">
+      <img src="/images/apniDukaan/theme.png" class="w-full md:w-1/3 p-2 rounded-2xl flex-shrink-0" alt="App Screenshot 6">
+      <img src="/images/apniDukaan/setting2.png" class="w-full md:w-1/3 p-2 rounded-2xl flex-shrink-0" alt="App Screenshot 7">
+    </div>
+  </div>
+</section>
+
+<script>
+  const carousel = document.getElementById("carousel");
+  let index = 0;
+
+  function autoSlide() {
+  const cardWidth = carousel.children[0].clientWidth;
+
+  // remove active class
+  Array.from(carousel.children).forEach(img => img.classList.remove("active"));
+
+  index++;
+  if (index >= carousel.children.length) {
+    index = 0;
+  }
+
+  // active image highlight
+  carousel.children[index].classList.add("active");
+  carousel.style.transform = `translateX(-${index * cardWidth}px)`;
+}
+
+
+  setInterval(autoSlide, 3000); // har 3 sec slide
+</script>
+
+
+
+  <!-- About Section -->
+  <section class="py-20 text-center px-6">
+    <h2 class="text-4xl font-bold mb-6">ℹ️ About Apni Dukaan</h2>
+    <p class="max-w-3xl mx-auto text-lg text-white/90">
+      Apni Dukaan is a modern Android app built for shopkeepers to manage stock and transactions.  
+      It helps you keep track of purchases, sales, profit, and inventory with ease.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-20 text-center bg-black/20 backdrop-blur-lg">
+    <h2 class="text-4xl font-bold mb-6">📩 Contact Us</h2>
+    <p class="mb-6">Have questions or feedback? Reach out anytime.</p>
+    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_tpa51dr0.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin:auto;" loop autoplay></lottie-player>
+    <a href="mailto:apnidukaan.support@gmail.com"
+       class="mt-6 inline-block bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold text-lg hover:scale-110 transition">
+      Email Us
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black/30 py-6 text-center text-white text-sm">
+    © 2025 Apni Dukaan | Made with ❤️ in India  
+    <div class="mt-2 flex justify-center space-x-4">
+      <a href="#" class="hover:underline">GitHub</a>
+      <a href="#" class="hover:underline">LinkedIn</a>
+      <a href="#" class="hover:underline">Instagram</a>
+    </div>
+  </footer>
+
+</body>
+</html>
