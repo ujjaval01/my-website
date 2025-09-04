@@ -1,4 +1,4 @@
-# 🌟 Bhai's Personal Portfolio
+# 🌟 Personal Portfolio
 
 Welcome to my **personal portfolio website**! This repository hosts a fully responsive and interactive website showcasing my **skills, projects, and UI/UX work**. Built with modern web technologies and hosted on **GitHub Pages**.
 
