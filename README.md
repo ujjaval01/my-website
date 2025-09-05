@@ -26,8 +26,8 @@ Welcome to my **personal portfolio website**! This repository hosts a fully resp
 
 🌐 Live Website
 Check out the live portfolio here:
-🔗 <a href="https://www.linkedin.com/in/<your-linkedin">Click me...</a> </br>
-🔗 <a href="https://www.linkedin.com/in/<your-linkedin">Github Live.</a>
+🔗 <a href="https://uvinfo.kesug.com/">Click me...</a> </br>
+🔗 <a href="https://ujjaval01.github.io/my-website/">Github Live.</a>
 
 🛠 Built With
 Frontend: HTML5, CSS3, JavaScript
