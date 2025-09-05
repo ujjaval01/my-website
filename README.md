@@ -23,25 +23,10 @@ Welcome to my **personal portfolio website**! This repository hosts a fully resp
 
 ---
 
-## 🗂 Repository Structure
-
-```text
-images/                     -> All website images
-about.html                   -> About me page
-backup.html                  -> Backup screen page
-contactUs.html               -> Contact page
-demo.html                    -> Project demo page
-index.html                   -> Homepage
-maintainance.html            -> Maintenance page
-new.html                     -> Experimental / new UI page
-project.html                 -> Main project showcase page
-raksha.html                  -> Additional project page
-uniqueLoginSignup.html       -> Login & Signup app page
-ytDownloader.html            -> YouTube Downloader project page
 
 🌐 Live Website
 Check out the live portfolio here:
-🔗 My Website
+🔗 <a href="https://www.linkedin.com/in/<your-linkedin">Click me...</a>
 
 🛠 Built With
 Frontend: HTML5, CSS3, JavaScript
